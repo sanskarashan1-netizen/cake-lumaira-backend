@@ -18,6 +18,14 @@ app.use(express.json());
 // Routes
 app.use('/orders', orderRoutes);
 
+// Root Route (Health Check)
+app.get('/', (req, res) => {
+  res.json({ 
+    status: "online", 
+    message: "Lumaira Premium Cake Shop Backend API is running successfully." 
+  });
+});
+
 // Connect to MongoDB Atlas
 if (!MONGODB_URI) {
   console.error("FATAL ERROR: MONGODB_URI is not defined in environment variables (.env)");
