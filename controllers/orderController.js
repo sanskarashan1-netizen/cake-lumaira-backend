@@ -60,3 +60,21 @@ export const updateStatus = async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 };
+
+// PATCH update any order details
+export const updateOrder = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const updateData = req.body;
+    
+    const updatedOrder = await OrderModel.updateOrder(id, updateData);
+    if (!updatedOrder) {
+      return res.status(404).json({ error: 'Order not found' });
+    }
+    
+    res.json(updatedOrder);
+  } catch (error) {
+    console.error('Error in updateOrder controller:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};

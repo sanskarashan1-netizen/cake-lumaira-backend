@@ -107,3 +107,17 @@ export const updateOrderStatus = async (id, status) => {
     throw error;
   }
 };
+
+// UPDATE order by ID (generic update for items, customer info, etc.)
+export const updateOrder = async (id, updateData) => {
+  try {
+    const options = { new: true };
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return await Order.findOneAndUpdate({ orderId: id }, updateData, options);
+    }
+    return await Order.findByIdAndUpdate(id, updateData, options);
+  } catch (error) {
+    console.error('Database update error in updateOrder:', error);
+    throw error;
+  }
+};
