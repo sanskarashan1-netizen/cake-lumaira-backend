@@ -3,6 +3,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import orderRoutes from './routes/orderRoutes.js';
+import heroRoutes from './routes/heroRoutes.js';
+import cakeRoutes from './routes/cakeRoutes.js';
 
 // Load environment variables
 dotenv.config();
@@ -17,6 +19,8 @@ app.use(express.json());
 
 // Routes
 app.use('/orders', orderRoutes);
+app.use('/hero-slides', heroRoutes);
+app.use('/cakes', cakeRoutes);
 
 // Root Route (Health Check)
 app.get('/', (req, res) => {
