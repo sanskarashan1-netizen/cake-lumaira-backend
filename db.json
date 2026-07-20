@@ -1,0 +1,70 @@
+{
+  "orders": [
+    {
+      "orderId": "LUM-850203",
+      "customer": {
+        "name": "sanskar ashan",
+        "phone": "9082903203",
+        "email": "sanskarashan1@gmail.com",
+        "address": "fghjkl"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "items": [
+        {
+          "id": 1,
+          "name": "Chocolate Truffle",
+          "price": "₹350",
+          "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80",
+          "quantity": 1
+        }
+      ],
+      "total": 350,
+      "createdAt": "2026-06-22T16:57:39.302Z",
+      "id": "tOeJedXABHs"
+    },
+    {
+      "orderId": "LUM-568240",
+      "customer": {
+        "name": "sanskar ashan",
+        "phone": "9082903203",
+        "email": "sanskarashan1@gmail.com",
+        "address": "qwertyuytrewsx"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "items": [
+        {
+          "id": 6,
+          "name": "Strawberry Bliss",
+          "price": "₹500",
+          "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80",
+          "quantity": 1
+        }
+      ],
+      "total": 500,
+      "createdAt": "2026-06-23T13:39:31.818Z",
+      "id": "hvH0rU6447Y"
+    },
+    {
+      "orderId": "LUM-620205",
+      "customer": {
+        "name": "sanskar ashan",
+        "phone": "9082903203",
+        "email": "sanskarashan1@gmail.com",
+        "address": "sdfvb "
+      },
+      "paymentMethod": "Cash on Delivery",
+      "items": [
+        {
+          "id": 7,
+          "name": "Blueberry Cheesecake",
+          "price": "₹650",
+          "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&q=80",
+          "quantity": 1
+        }
+      ],
+      "total": 650,
+      "createdAt": "2026-06-23T13:40:00.979Z",
+      "id": "wUj2wYxpn_s"
+    }
+  ]
+}

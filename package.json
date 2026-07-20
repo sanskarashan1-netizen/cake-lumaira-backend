@@ -1,0 +1,20 @@
+{
+  "name": "cake-lumaira-backend",
+  "version": "1.0.0",
+  "description": "Express.js backend for Lumaira Premium Cake Shop",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2",
+    "mongoose": "^9.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
